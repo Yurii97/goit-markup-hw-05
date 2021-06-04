@@ -200,16 +200,12 @@ img {
 .feature-list .item {
   width: 270px;
 }
-.feature-list .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  /* outline: 1px solid red; */
+.feature-list .icons-svg {
+  display: flex;
+  justify-content: center;
   background-color: var(--button-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+  padding: 25px 0;
+  margin-bottom: 30px;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -225,18 +221,6 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-}
-.icon-antenna::before {
-  background-image: url(../images/icons/other-icons/antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/icons/other-icons/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/icons/other-icons/diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/icons/other-icons/astronaut.svg);
 }
 /* Чем мы занимаемся */
 .hidden-padding-top {
