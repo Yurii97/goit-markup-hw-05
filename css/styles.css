@@ -129,6 +129,7 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   padding: 32px 0px;
+  transition: var(--prymary-transition);
 }
 .site-nav a {
   position: relative;
@@ -140,7 +141,6 @@ img {
 .contact-nav a:hover,
 .contact-nav a:focus {
   color: var(--accent-color);
-  transition: var(--prymary-transition);
 }
 .contact-nav a {
   display: flex;
@@ -198,12 +198,12 @@ img {
   border-width: 0px;
   padding: 10px 32px;
   cursor: pointer;
+  transition: var(--prymary-transition);
 }
 .hero-button:hover,
 .hero-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-color-hover);
-  transition: var(--prymary-transition);
 }
 /*MAIN */
 
@@ -307,6 +307,7 @@ img {
   justify-content: center;
   align-items: center;
   fill: var(--backround-icons);
+  transition: var(--prymary-transition);
 }
 .team-social-icons .item:not(:last-child) {
   margin-right: 10px;
@@ -315,7 +316,6 @@ img {
 .team-social-icons a:focus {
   background-color: var(--accent-color);
   fill: var(--button-text-color);
-  transition: var(--prymary-transition);
 }
 /* Постоянные клиенты */
 .customers-list {
@@ -336,12 +336,12 @@ img {
   justify-content: center;
   align-items: center;
   fill: var(--backround-icons);
+  transition: var(--prymary-transition);
 }
 .customers-list a:hover,
 .customers-list a:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-  transition: var(--prymary-transition);
 }
 /* FOOTER */
 /* adress */
@@ -362,10 +362,12 @@ img {
 .footer .container {
   display: flex;
 }
+.adress-footer a {
+  transition: var(--prymary-transition);
+}
 .adress-footer a:hover,
 .adress-footer a:focus {
   color: var(--accent-color);
-  transition: var(--prymary-transition);
 }
 .adress-footer p {
   color: var(--button-text-color);
@@ -420,33 +422,34 @@ img {
   border-radius: 50%;
   background-color: var(--background-color-footer-social);
   fill: var(--button-text-color);
+  transition: var(--prymary-transition);
 }
 .footer-social-icons a:hover,
 .footer-social-icons a:focus {
   background-color: var(--accent-color);
   fill: var(--button-text-color);
-  transition: var(--prymary-transition);
 }
 /* BACKDROP */
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  transition: 500ms ease-out;
-  transform: scale(100%);
+  transition: 1500ms ease-out;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transform: scale(80%, 25%);
+  transform: scale(0.8, 0.2);
 }
 .modal-windons {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+  width: 100%;
+  max-height: 581px;
+  height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -493,6 +496,7 @@ img {
   border-width: 0px;
   padding: 6px 22px;
   margin-bottom: 50px;
+  transition: var(--prymary-transition);
 }
 .price-button:hover,
 .price-button:focus {
@@ -501,7 +505,7 @@ img {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--prymary-transition);
+  /* transition: var(--prymary-transition); */
 }
 .border-list {
   display: block;
